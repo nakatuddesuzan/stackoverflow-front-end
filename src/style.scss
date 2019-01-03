@@ -1,8 +1,188 @@
 :root {
-  font-size: 62.5%;
+  font-size: 1rem;
+}
+body {
+  background-color: #f8f8f9;
+  display: block;
+  margin: 0px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
-body {
-  font-size: 1.6rem;
-  background: #f5f5f5;
+.index {
+  padding: 30px;
+  float: right;
+}
+
+a {
+  color: white;
+}
+
+.div1 {
+  background-color: rgb(68, 68, 248);
+  box-sizing: border-box;
+  border: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  padding: 30px;
+  // border-radius: 14px;
+  vertical-align: center;
+  float: right;
+  opacity: 0.9;
+  // margin: 10px;
+}
+
+.flex {
+  display: flex;
+  margin: 1px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  background: rgb(228, 228, 243);
+}
+
+.btn {
+  background-color: rgb(68, 68, 248);
+  color: white;
+  padding: 14px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn-index {
+  padding: 14px 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  float: right;
+  opacity: 0.9;
+  border-radius: 20px;
+  background-color: darkblue;
+}
+
+.div2 {
+  font-size: 20px;
+  color: white;
+  vertical-align: center;
+  float: left;
+}
+
+.link {
+  color: white;
+}
+.link1 {
+  color: blue;
+}
+
+.link:hover {
+  color: rgb(140, 140, 248);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f8f8f9;
+}
+
+.topnav a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #d5d5e9;
+  color: blue;
+}
+
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+
+footer a {
+  color: blue;
+  text-align: center;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  width: 90%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: rgb(228, 228, 243);
+}
+
+.topnav input[type='text'] {
+  padding: 14px;
+  margin-left: 16px;
+  border: none;
+  font-size: 17px;
+  width: 30%;
+  background-color: white;
+}
+
+.sform {
+  box-sizing: border-box;
+  border: 10px solid blue;
+  width: 30%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 14px;
+  vertical-align: center;
+  margin: auto;
+  color: white;
+}
+.sformindex {
+  border: 10px solid blue;
+  width: 100%;
+  margin: none;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
 }
