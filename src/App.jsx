@@ -1,16 +1,11 @@
 import React from 'react';
+import LandingPage from './components/landingpage';
+
 
 class App extends React.Component {
-  state = {
-    name: 'Suzan',
-  };
-
-  renderGreeting = () => (
-    <h1>Welcome!!! {this.state.name}!</h1>
-  );
-
   render() {
-    return this.renderGreeting();
+    return (<LandingPage />);
+ 
   }
 }
 
