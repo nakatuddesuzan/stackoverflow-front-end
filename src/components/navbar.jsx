@@ -8,7 +8,6 @@ const navBar = () =>(
         <a href="about">About</a>
         <div className = "right">
             <a href="/login">Log in</a>
-            {/* <a href="/signup">Sign Up</a> */}
            
             <input type = "text" name = "search" placeholder="search....."/>
         </div>
