@@ -42,7 +42,6 @@ class SignUp extends Component {
             <input
               type="text"
               placeholder="Sue"
-              name="dname"
               name="username"
               value={username}
               onChange={this.onChange}
@@ -104,6 +103,7 @@ export const mapStateToProps = state => state;
 export const mapDispatchToProps = dispatch => ({
   signUp: signupData => dispatch(signup(signupData))
 });
+export { SignUp };
 
 export default connect(
   mapStateToProps,

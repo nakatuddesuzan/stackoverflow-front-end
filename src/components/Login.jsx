@@ -88,6 +88,7 @@ export const mapStateToProps = state => state;
 export const mapDispatchToProps = dispatch => ({
   logIn: logInData => dispatch(login(logInData))
 });
+export { LogIn };
 
 export default connect(
   mapStateToProps,
