@@ -1,7 +1,8 @@
 
 import React from 'react';
 import LandingPage from "./landingpage";
-import "../assets/styles.css";
+// import "../assets/styles.css";
+import SignUp from './SignUp';
 
 class Home extends React.Component {
   state = {
@@ -9,9 +10,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <div className="jumbotron2"> */}
-        <LandingPage />
-        {/* </div> */}
+        <SignUp />
       </React.Fragment>
     );
   }

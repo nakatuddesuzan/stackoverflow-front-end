@@ -30,6 +30,9 @@ const config = {
       }
     ],
   },
+  devServer: {
+    historyApiFallback: true
+  },
   plugins: [
    new HTMLWebpackPlugin({
      template: './src/index.html',

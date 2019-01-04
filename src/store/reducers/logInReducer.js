@@ -1,8 +1,8 @@
 import { errorMessage } from '../../helpers/toast';
 
-const signUpReducer = (state, action) => {
+const logInReducer = (state, action) => {
   switch (action.type) {
-    case 'SIGNUP': {
+    case 'LOGIN': {
       if (action.payload) {
         return {
           ...state,
@@ -11,15 +11,16 @@ const signUpReducer = (state, action) => {
       }
     }
 
-    case 'SIGNUP_ERROR': {
+    case 'LOGIN_ERROR': {
       if (action.payload) {
+
         return {
           ...state,
           errors: action.payload
         };
       }
     }
-    case 'SIGNUP_MESSAGE': {
+    case 'LOGIN_MESSAGE': {
       if (action.payload) {
         errorMessage(action.payload.message);
 
@@ -36,9 +37,8 @@ const signUpReducer = (state, action) => {
 };
 
 const initialState = {
-  username: '',
   email: '',
   password: ''
 };
 
-export default (state = initialState, action) => signUpReducer(state, action);
+export default (state = initialState, action) => logInReducer(state, action);
