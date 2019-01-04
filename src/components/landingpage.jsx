@@ -1,12 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NavBar from './navbar';
-import Footer from './footer';
 import SignUp from './SignUp';
 
-const landingPage = (props) => {
-  
-  const {children} = props;
+const landingPage = () => {
 
   return (
     <React.Fragment>

@@ -1,3 +1,7 @@
+[![Test Coverage](https://api.codeclimate.com/v1/badges/acee7db680894e9ef3fa/test_coverage)](https://codeclimate.com/github/nakatuddesuzan/stackoverflow-front-end/test_coverage)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/acee7db680894e9ef3fa/maintainability)](https://codeclimate.com/github/nakatuddesuzan/stackoverflow-front-end/maintainability)
+
 <h1 align="center">Stackoverflow-lite</h1>
 
 ## About stackoverflow-lite
