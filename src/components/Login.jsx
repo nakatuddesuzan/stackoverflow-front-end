@@ -31,55 +31,55 @@ class LogIn extends Component {
   render() {
     const { password, email } = this.state;
     return (
-      <div className="body-div">
-        <div className="sform">
-          <div>
-            <label htmlFor="email">
-              <b>Email</b>
-            </label>
-            <br />
-            <input
-              type="email"
-              placeholder="sue@gmail.com"
-              name="email"
-              value={email}
-              onChange={this.onChange}
-              required
-            />
-            <br />
-            <br />
-            <label htmlFor="password">
-              <b>Password</b>
-            </label>
-            <br />
-            <input
-              type="password"
-              placeholder=""
-              name="password"
-              value={password}
-              onChange={this.onChange}
-              required
-            />
-            <br />
-            <br />
-            <a href="profile.html">
+      <form onSubmit={this.onSubmit}>
+        <div className="body-div">
+          <div className="sform">
+            <div>
+              <label htmlFor="email">
+                <b>Email</b>
+              </label>
+              <br />
+              <input
+                type="email"
+                placeholder="sue@gmail.com"
+                name="email"
+                value={email}
+                onChange={this.onChange}
+                required
+              />
+              <br />
+              <br />
+              <label htmlFor="password">
+                <b>Password</b>
+              </label>
+              <br />
+              <input
+                type="password"
+                placeholder=""
+                name="password"
+                value={password}
+                onChange={this.onChange}
+                required
+              />
+              <br />
+              <br />
               <button type="submit" onClick={this.onSubmit}>
                 Log In
               </button>
-            </a>
-            <br />
-            <br />
-            <br />
-          </div>
-          <div>
-            Don't have an account?
-            <a className="link" href="signup.html">
-              {' '}
-              Sign up
-            </a>
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              Don't have an account?
+              <a className="link" href="/">
+                {' '}
+                Sign up
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }

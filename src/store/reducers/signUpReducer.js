@@ -4,6 +4,7 @@ const signUpReducer = (state, action) => {
   switch (action.type) {
     case 'SIGNUP': {
       if (action.payload) {
+        window.location.replace("/login")
         return {
           ...state,
           message: action.payload.success

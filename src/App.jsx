@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import store from './store/store';
 import Login from './components/Login';
 import Root from './Root';
+import Profiles from './components/Profiles'
 
 class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class App extends React.Component {
               <Notifications />
               <Route exact path="/" component={LandingPage} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/profile" component={Profiles} />
             </Root>
           </div>
         </Router>

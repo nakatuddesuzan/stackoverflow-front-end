@@ -4,6 +4,7 @@ const logInReducer = (state, action) => {
   switch (action.type) {
     case 'LOGIN': {
       if (action.payload) {
+        window.location.replace("/profile")
         return {
           ...state,
           message: action.payload.success
