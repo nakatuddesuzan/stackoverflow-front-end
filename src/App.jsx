@@ -4,6 +4,8 @@ import Notifications from 'react-notify-toast';
 import { Provider } from 'react-redux';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import store from './store/store';
+import Login from './components/Login';
+import Root from './Root';
 
 class App extends React.Component {
   render() {
@@ -11,9 +13,11 @@ class App extends React.Component {
       <Provider store={store}>
         <Router>
           <div>
-            <Notifications />
-            <Route path="/" exact component={LandingPage} />
-            {/* <Route exact path="/signup" exact component={SignUp} /> */}
+            <Root>
+              <Notifications />
+              <Route exact path="/" component={LandingPage} />
+              <Route exact path="/login" component={Login} />
+            </Root>
           </div>
         </Router>
       </Provider>
