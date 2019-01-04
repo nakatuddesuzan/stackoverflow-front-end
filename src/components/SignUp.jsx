@@ -33,68 +33,71 @@ class SignUp extends Component {
   render() {
     const { username, password, email } = this.state;
     return (
-      <div className="index">
-        <div className="sform sformindex">
-          <div className="flex">
-            <label htmlFor="dname">
-              <b>Display Name</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Sue"
-              name="username"
-              value={username}
-              onChange={this.onChange}
-              required
-            />
-          </div>
-          <br />
-          <br />
-          <div className="flex">
-            <label htmlFor="email">
-              <b>Email Address</b>
-            </label>
-            <input
-              type="email"
-              placeholder="sue@gmail.com"
-              name="email"
-              value={email}
-              onChange={this.onChange}
-              required
-            />
-          </div>
-          <br />
-          <br />
-          <div className="flex">
-            <label htmlFor="password">
-              <b>Password</b>
-            </label>
-            &nbsp;
-            {/* &nbsp; */}
-            <input
-              type="password"
-              placeholder=""
-              name="password"
-              value={password}
-              onChange={this.onChange}
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title="Must contain at least one number and 
+      <form onSubmit={this.onSubmit}>
+        <div className="index">
+          <div className="sform sformindex">
+            <div className="flex">
+              <label htmlFor="dname">
+                <b>Display Name</b>
+              </label>
+              <input
+                type="text"
+                placeholder="Sue"
+                name="username"
+                value={username}
+                onChange={this.onChange}
+                required
+              />
+            </div>
+            <br />
+            <br />
+            <div className="flex">
+              <label htmlFor="email">
+                <b>Email Address</b>
+              </label>
+              <input
+                type="email"
+                placeholder="sue@gmail.com"
+                name="email"
+                value={email}
+                onChange={this.onChange}
+                required
+              />
+            </div>
+            <br />
+            <br />
+            <div className="flex">
+              <label htmlFor="password">
+                <b>Password</b>
+              </label>
+              &nbsp;
+              {/* &nbsp; */}
+              <input
+                type="password"
+                placeholder=""
+                name="password"
+                value={password}
+                onChange={this.onChange}
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and 
               one uppercase and lowercase letter, and at 
               least 8 or more characters"
-              required
-            />
+                required
+              />
+            </div>
+            <button type="submit" onClick={this.onSubmit} className="btn-index">
+              Sign up
+            </button>
+            
           </div>
-          <button type="submit" onClick={this.onSubmit} className="btn-index">
-            Sign up
-          </button>
+          <br />
+          <br />
+          <div>
+            <b>Already have an account? </b>
+            <a href="/login">Login</a>
+          </div>
         </div>
-        <br />
-        <br />
-        <div>
-          <b>Already have an account? </b>
-          <a href="login.html">Login</a>
-        </div>
-      </div>
+      </form>
     );
   }
 }

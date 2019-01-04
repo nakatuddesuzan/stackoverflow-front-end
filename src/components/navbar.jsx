@@ -5,7 +5,7 @@ import React from 'react';
 const navBar = () =>(
     <div className = "topnav" >
         <a className = "active" to="index">Home</a>
-        <a href="about">About</a>
+        <a href="/about">About</a>
         <div className = "right">
             <a href="/login">Log in</a>
            

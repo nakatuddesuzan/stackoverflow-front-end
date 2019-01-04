@@ -5,7 +5,6 @@ const landingPage = () => {
 
   return (
     <React.Fragment>
-      <form>
         <div className="div1">
           <div className="div2">
             <h1>StackOverflow-lite app </h1>
@@ -23,7 +22,6 @@ const landingPage = () => {
         </div>
         <br />
         <br />
-      </form>
     </React.Fragment>
   );
 }
