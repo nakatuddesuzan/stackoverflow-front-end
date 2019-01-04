@@ -1,6 +1,6 @@
-[![Test Coverage](https://api.codeclimate.com/v1/badges/acee7db680894e9ef3fa/test_coverage)](https://codeclimate.com/github/nakatuddesuzan/stackoverflow-front-end/test_coverage)
+[![Build Status](https://travis-ci.org/nakatuddesuzan/stackoverflow-front-end.svg?branch=develop)](https://travis-ci.org/nakatuddesuzan/stackoverflow-front-end)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/acee7db680894e9ef3fa/maintainability)](https://codeclimate.com/github/nakatuddesuzan/stackoverflow-front-end/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/acee7db680894e9ef3fa/test_coverage)](https://codeclimate.com/github/nakatuddesuzan/stackoverflow-front-end/test_coverage)
 
 <h1 align="center">Stackoverflow-lite</h1>
 
